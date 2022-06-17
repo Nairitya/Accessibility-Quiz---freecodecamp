@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Accessibility Quiz.css" />
+    <title>Accessibility Quiz - Nairitya</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="/images/Fly-kick-logo.png"
+        alt="logo of man doing flying kick"
+        id="logo"
+      />
+      <h1>CALISTHENICS QUIZ</h1>
+      <nav>
+        <ul>
+          <li><a href="#personal-info">INFO</a></li>
+          <li><a href="#calisthenics">CALISTHENICS</a></li>
+          <li><a href="#general">GENERAL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="" method="post">
+        <section role="region" aria-labelledby="personal-info">
+          <h2 id="personal-info">Personal Info</h2>
+          <div class="info">
+            <label for="name">Name:</label
+            ><input type="text" name="" id="name" />
+          </div>
+          <div class="info">
+            <label for="email">Email:</label
+            ><input type="email" name="" id="email" />
+          </div>
+          <div class="info">
+            <label for="birth-date"
+              >D.O.B.<span class="sr-only">(Date of birth)</span>:</label
+            ><input type="date" name="" id="birth-date" />
+          </div>
+        </section>
+        <section
+          id="calisthenics"
+          role="region"
+          aria-labelledby="calisthenics-questions"
+        >
+          <h2 id="calisthenics-questions">Calisthenics</h2>
+          <div class="question-block">
+            <p>1</p>
+            <fieldset>
+              <legend>
+                Calisthenics is when you use your bodyweight as resistance for
+                exercises.
+              </legend>
+              <ul>
+                <li>
+                  <label><input type="radio" name="q1-a1" />True</label>
+                </li>
+                <li>
+                  <label for=""><input type="radio" name="q1-a1" />False</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <p>2</p>
+            <fieldset>
+              <legend>
+                Calisthenics is the use of free weights as resistance.
+              </legend>
+              <ul>
+                <li>
+                  <label><input type="radio" name="q1-a2" />True</label>
+                </li>
+                <li>
+                  <label for=""><input type="radio" name="q1-a2" />False</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section id="general" role="region" aria-labelledby="general-questions">
+          <h2 id="general-questions">General</h2>
+          <div class="gen-q">
+            <label for="experience"
+              >How much Calisthenics Experience do you have?</label
+            >
+          </div>
+          <div class="gen-ans">
+            <select id="experience">
+              <option>Select an option</option>
+              <option>No Experience</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Expert</option>
+            </select>
+          </div>
+          <div class="gen-q">
+            <label for="other-questions"
+              >Do you have any doubts/questions</label
+            >
+          </div>
+          <div class="gen-ans">
+            <textarea
+              name="other-questions"
+              id="other-questions"
+              cols="30"
+              rows="5"
+              placeholder="How can I start calisthenics at home..."
+            ></textarea>
+          </div>
+        </section>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </main>
+  </body>
+</html>
